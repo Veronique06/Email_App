@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/dash', function () {
-    return view('AdminView.dashboard');
+    return view('adminView.dashboard');
 });
