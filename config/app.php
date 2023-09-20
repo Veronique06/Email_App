@@ -17,7 +17,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-    'author' =>env('APP_AUTHOR', "AKM TECH"),
+    'author' =>env('APP_AUTHOR', "OLA & AKM TECH"),
 
     /*
     |--------------------------------------------------------------------------
@@ -169,6 +169,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\FortifyServiceProvider::class,
     ])->toArray(),
 
     /*

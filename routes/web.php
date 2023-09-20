@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dash', function () {
-    return view('adminView.dashboard');
-});
+Route::get('/home', function () {
+    return view('home');
+})->middleware('auth');
+
+require __DIR__ . '/admin_route.php';
