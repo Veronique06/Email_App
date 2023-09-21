@@ -5,7 +5,7 @@
 <!-- Mirrored from mannatthemes.com/dastone/default/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Sep 2023 09:57:49 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Dastone - Admin & Dashboard Template</title>
+        <title>Email_App - User</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="" name="author" />
@@ -36,7 +36,7 @@
                                             <img src="{{ asset('assets/images/logo-sm-dark.png')}}" height="50" alt="logo" class="auth-logo">
                                         </a>
                                         <h4 class="mt-3 mb-1 fw-semibold text-white font-18">Let's Get Started Dastone</h4>   
-                                        <p class="text-muted  mb-0">Sign in to continue to Dastone.</p>  
+                                        <p class="text-muted  mb-0">Inscrivez-vous pour continuer sur Email_App.</p>  
                                     </div>
                                 </div>
                                 <div class="card-body p-0">
@@ -109,7 +109,7 @@
                                                     </div><!--end col--> 
                                                 </div> <!--end form-group-->                           
                                             </form><!--end form-->
-                                            <p class="my-3 text-muted">Already have an account ?<a href="{{ route('login')}}" class="text-primary ms-2">Log in</a></p>                                                    
+                                            <p class="my-3 text-muted">Déjà un compte ?<a href="{{ route('login')}}" class="text-primary ms-2">S'inscrire</a></p>                                                    
                                         </div>
                                
                                 </div><!--end card-body-->

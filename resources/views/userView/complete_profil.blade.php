@@ -44,7 +44,7 @@
                         <div class="page-title-box">
                             <div class="row">
                                 <div class="col">
-                                    <h4 class="page-title">Complete votre profil</h4>
+                                    <h4 class="page-title">Complèter votre profil</h4>
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="javascript:void(0);">Dastone</a></li>
                                         <li class="breadcrumb-item active">Finaliser votre inscription</li>
@@ -75,39 +75,48 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Completer votre profil</h4>
+                                <h4 class="card-title">Complèter votre profil</h4>
                                 <p class="text-muted mb-0">
-                                    Pour une meilleur utilisation de notre système, nous vous aons esoins de quelques informations.
+                                    Pour une meilleur utilisation de notre système, nous vous avons besoins de quelques informations.
                                 </p>
                             </div>
                             <!--end card-header-->
                             <div class="card-body">
-                                <form id="form-vertical" class="form-horizontal form-wizard-wrapper">
-                                    <h3>Create Account</h3>
+                                <form id="form-vertical" class="form-horizontal form-wizard-wrapper" method="POST">
+                                    <h3>Détails</h3>
                                     <fieldset>
                                         <div class="form-group ">
-                                            <label for="example-email-input1" class="col-form-label">Email</label>
+                                            <label for="example-email-input1" class="col-form-label">Téléphone</label>
                                             <div class="">
-                                                <input class="form-control" type="email" value=""
-                                                    id="example-email-input1" placeholder="@Example.com">
+                                                <input class="form-control" name="telephone" type="text" value="{{ old('telephone') }}"
+                                                    id="example-email-input1" placeholder="">
                                             </div>
+                                              @error('telephone')
+                                                    <span class="text-danger">{{$message}}</span>
+                                              @enderror
                                         </div>
                                         <!--end form-group-->
                                         <div class="form-group ">
-                                            <label for="example-password-input1" class="col-form-label">Password</label>
+                                            <label for="example-password-input1" class="col-form-label">Adresse</label>
                                             <div class="">
-                                                <input class="form-control" type="password" id="example-password-input1"
-                                                    placeholder="Password">
+                                                <input class="form-control" name="adresse" value="{{ old('adresse') }}" type="text" id="example-password-input1"
+                                                    placeholder="">
                                             </div>
+                                              @error('adresse')
+                                                    <span class="text-danger">{{$message}}</span>
+                                              @enderror
                                         </div>
                                         <!--end form-group-->
                                         <div class="form-group ">
-                                            <label for="example-password-input01" class="col-form-label">Confirm
-                                                Password</label>
+                                            <label for="example-password-input01" class="col-form-label">Date de naissance
+                                                </label>
                                             <div class="">
-                                                <input class="form-control" type="password"
-                                                    id="example-password-input01" placeholder="Confirm Password">
+                                                <input class="form-control" name="date" type="date"
+                                                    id="example-password-input01" value="{{ old('date') }}" placeholder="">
                                             </div>
+                                            @error('date')
+                                                    <span class="text-danger">{{$message}}</span>
+                                              @enderror
                                         </div>
                                         <!--end form-group-->
 
@@ -119,48 +128,63 @@
                                     </fieldset>
                                     <!--end fieldset-->
 
-                                    <h3>Basic Form</h3>
+                                    <h3>Autres infos</h3>
                                     <fieldset>
                                         <div class="form-group row">
                                             <div class="col-sm-12 col-lg-6">
-                                                <input class="form-control" type="text" id="name" placeholder="Name">
+                                                  
+                                            <select class="form-control custom-select" name="account_type">
+                                                <option selected disabled>Sélectionner</option>
+                                                <option value="User" {{ old('account_type') == "User" ? 'selected' : '' }} >User</option>
+                                                <option value="Society"  {{ old('account_type') == "Society" ? 'selected' : '' }} >Society</option>
+                                            </select>
                                             </div>
                                             <div class="col-sm-12 col-lg-6">
-                                                <input class="form-control" type="email" id="example-email-input3"
-                                                    placeholder="Email">
+                                                <input class="form-control" name="pays" value="{{ old('pays') }}" type="text" id="example-email-input3"
+                                                    placeholder="Pays">
                                             </div>
+                                            @error('pays')
+                                                    <span class="text-danger">{{$message}}</span>
+                                              @enderror
                                         </div>
                                         <!--end form-group-->
 
                                         <div class="form-group row">
                                             <div class="col-sm-12">
-                                                <input class="form-control" type="text" id="subject2"
-                                                    placeholder="Subject">
+                                                 <label for="exampleInputFile">Photo</label>
+                                                <input type="file" name="photo" value="{{ old('photo') }}" id="exampleInputFile">
                                             </div>
+                                              @error('photo')
+                                                    <span class="text-danger">{{$message}}</span>
+                                              @enderror
                                         </div>
                                         <!--end form-group-->
                                         <div class="form-group">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
-                                                placeholder="Your message"></textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="about"
+                                                placeholder="A propos de vous"></textarea>
+
+                                                @error('about')
+                                                    <span class="text-danger">{{$message}}</span>
+                                              @enderror
                                         </div>
                                         <!--end form-group-->
                                         <div class="form-check  ms-1">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            <input class="form-check-input" type="radio" name="sexe" value="{{ old('homme') }}"
                                                 id="flexRadioDefault1">
                                             <label class="form-check-label" for="flexRadioDefault1">
-                                                Male
+                                               Homme
                                             </label>
                                         </div>
                                         <div class="form-check  ms-1">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            <input class="form-check-input" type="radio" name="sexe" value="{{ old('femme') }}"
                                                 id="flexRadioDefault2" checked>
                                             <label class="form-check-label" for="flexRadioDefault2">
-                                                Female
+                                                Femme
                                             </label>
                                         </div>
                                     </fieldset>
                                     <!--end fieldset-->
-                                    <h3>Confurm Detail</h3>
+                                    <h3>Confirmer</h3>
                                     <fieldset>
                                         <p>I agree with the Terms and Conditions.</p>
                                     </fieldset>
