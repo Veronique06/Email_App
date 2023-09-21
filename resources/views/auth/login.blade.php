@@ -71,7 +71,7 @@
                                                         </div>
                                                     </div><!--end col--> 
                                                     <div class="col-sm-6 text-end">
-                                                        <a href="auth-recover-pw.html" class="text-muted font-13"><i class="dripicons-lock"></i> Mot de passe oublié?</a>                                    
+                                                        <a href="{{ route('password.request') }}" class="text-muted font-13"><i class="dripicons-lock"></i> Mot de passe oublié?</a>                                    
                                                     </div><!--end col--> 
                                                 </div><!--end form-group--> 
                     
