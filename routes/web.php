@@ -17,9 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('userView.home');
-})->middleware('profil');
+
+
+Route::middleware(['auth', 'complete_profil'])->group(function () {
+
+    Route::get('/home', function () {
+        return view('userView.home');
+    })->name('home');
+
+});
 
 Route::get('complete', function () {
     return view('userView.complete_profil');

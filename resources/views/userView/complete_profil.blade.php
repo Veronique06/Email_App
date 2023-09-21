@@ -132,7 +132,7 @@
                                     <fieldset>
                                         <div class="form-group row">
                                             <div class="col-sm-12 col-lg-6">
-                                                  
+
                                             <select class="form-control custom-select" name="account_type">
                                                 <option selected disabled>Sélectionner</option>
                                                 <option value="User" {{ old('account_type') == "User" ? 'selected' : '' }} >User</option>
@@ -243,11 +243,3 @@
 </body>
 
 </html>
-
-
-Problème de wizard
-Verification des numero TVA et Siret
-Affichae des invitations
-Apiem
-
-tache de notification  verification de date
