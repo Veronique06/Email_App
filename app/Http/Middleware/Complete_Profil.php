@@ -15,13 +15,13 @@ class Complete_Profil
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(auth()->user()->Admin==1 )
-        {
-            return $next($request); 
+        // if(auth()->user()->Admin==1 )
+        // {
+        //     return $next($request); 
 
-        }else{
-            return view('userView.complete_profil');
-        }
+        // }else{
+        //     return view('userView.complete_profil');
+        // }
 
         
     }
