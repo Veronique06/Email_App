@@ -5,7 +5,6 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
@@ -19,16 +18,6 @@ class Complete_Profil
      */
     public function handle(Request $request, Closure $next): Response
     {
-        /*
-        if(auth()->user()->Admin==1 )
-        {
-            return $next($request);
-
-        }else{
-            return view('userView.complete_profil');
-        }
-
-        */
 
         if(Auth::user()->profil == 0){
             return redirect()->route('complete_profil');
