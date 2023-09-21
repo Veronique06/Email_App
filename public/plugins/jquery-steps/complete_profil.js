@@ -507,7 +507,6 @@
             onStepChanged: function () {},
             onCanceled: function () {},
             onFinishing: function () {
-                console.log('finishe 2');
                 return !0
             },
             onFinished: function () {

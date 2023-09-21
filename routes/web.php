@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\user\ProfilController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,5 +28,8 @@ Route::middleware(['auth', 'complete_profil'])->group(function () {
 Route::get('complete', function () {
     return view('userView.complete_profil');
 })->name('complete_profil')->middleware('auth');
+
+Route::get('complete-profil-valid',[ProfilController::class , "completer_information"])
+->name('complete_profil_valid')->middleware('auth');
 
 require __DIR__ . '/admin_route.php';

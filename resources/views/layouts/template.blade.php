@@ -69,6 +69,8 @@
                         <!--end col-->
                     </div>
 
+                    @include('layouts.message')
+
                     @yield('contenu')
 
                 </div>

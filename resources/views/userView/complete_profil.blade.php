@@ -72,6 +72,9 @@
                 <!--end row-->
 
                 <div class="row">
+                    <div class="col-12 mb-2">
+                        <a href="{{route('complete_profil_valid')}}" class="btn btn-outline-warning">Valider mon profil</a>
+                    </div>
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
@@ -184,11 +187,7 @@
                                         </div>
                                     </fieldset>
                                     <!--end fieldset-->
-                                    <h3>Confirmer</h3>
-                                    <fieldset>
-                                        <p>I agree with the Terms and Conditions.</p>
-                                    </fieldset>
-                                    <!--end fieldset-->
+
                                 </form>
                                 <!--end form-->
                             </div>
@@ -231,7 +230,8 @@
      <script src="{{ asset('plugins/jvectormap/jquery-jvectormap-us-aea-en.js')}}"></script>
      <script src="{{ asset('assets/pages/jquery.analytics_dashboard.init.js')}}"></script>
 
-     <script src="{{asset('plugins/jquery-steps/jquery.steps.min.js')}}"></script>
+     <script src="{{asset('plugins/jquery-steps/complete_profil.js')}}"></script>
+     <!--script src="{{asset('plugins/jquery-steps/jquery.steps.min.js')}}"></script-->
      <script src="{{asset('assets/pages/jquery.form-wizard.init.js')}}"></script>
 
      <!-- App js -->
