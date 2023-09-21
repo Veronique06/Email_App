@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-12 mb-2 text-center ">
         @if(Session::get('primary'))
         <div class="alert alert-outline-primary" role="alert">
             <strong>{{Session::get('primary')}}</strong>

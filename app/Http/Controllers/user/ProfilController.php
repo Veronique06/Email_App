@@ -19,6 +19,6 @@ class ProfilController extends Controller
         $user->profil = true;
         $user->save();
 
-        return redirect()->route('home')->with('success', "Vous venez de completer otre proil aec succès");
+        return redirect()->route('home')->with('success', "Vous venez de completer votre proil aec succès");
     }
 }

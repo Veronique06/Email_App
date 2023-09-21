@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::middleware(['auth','verified' ,'complete_profil'])->group(function () {
     Route::get('/home', function () {
-        return view('userView.home');
+        return view('userView.dashboard');
     })->name('home');
 });
 

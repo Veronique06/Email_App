@@ -85,10 +85,6 @@
             <!-- end page content -->
         </div>
         <!-- end page-wrapper -->
-
-
-
-
         <!-- jQuery  -->
         <script src="{{ asset('assets/js/jquery.min.js')}}"></script>
         <script src="{{ asset('assets/js/bootstrap.bundle.min.js')}}"></script>
