@@ -18,7 +18,6 @@ Route::get('/', function () {
 });
 
 
-
 Route::middleware(['auth', 'complete_profil'])->group(function () {
     Route::get('/home', function () {
         return view('userView.home');

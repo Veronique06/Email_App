@@ -19,8 +19,13 @@ class Complete_Profil
     public function handle(Request $request, Closure $next): Response
     {
 
-       
 
-        
+        if(Auth::user()->profil == 0){
+            return redirect()->route('complete_profil');
+        }else{
+            return $next($request);
+        }
+
+
     }
 }
