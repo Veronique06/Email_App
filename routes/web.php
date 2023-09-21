@@ -15,10 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
-
-Route::middleware(['auth', 'complete_profil'])->group(function () {
+Route::middleware(['auth','verified' ,'complete_profil'])->group(function () {
     Route::get('/home', function () {
         return view('userView.home');
     })->name('home');
@@ -26,6 +25,6 @@ Route::middleware(['auth', 'complete_profil'])->group(function () {
 
 Route::get('complete', function () {
     return view('userView.complete_profil');
-})->name('complete_profil')->middleware('auth');
+})->name('complete_profil')->middleware(['auth','verified']);
 
 require __DIR__ . '/admin_route.php';

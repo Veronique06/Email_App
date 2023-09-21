@@ -53,15 +53,16 @@
           <li><a class="nav-link scrollto" href="#services">Fonctionnalités</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Tarifs</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          @auth
           <li class="dropdown"><a href="#"><span>Mon compte</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Tableau de bord</a></li>
+              <li><a href="{{ route('home')}}">Tableau de bord</a></li>
             
               </li>
               
             </ul>
           </li>
-          @auth
+     
           <li><a class="getstarted scrollto" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Déconnecter</a></li>
           <form id="logout-form" action="{{ route('logout') }}" method="POST">
             @csrf

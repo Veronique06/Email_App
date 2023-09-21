@@ -107,14 +107,17 @@
                         <li class="dropdown">
                             <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-bs-toggle="dropdown" href="#" role="button"
                                 aria-haspopup="false" aria-expanded="false">
-                                <span class="ms-1 nav-user-name hidden-sm">Nick</span>
+                                <span class="ms-1 nav-user-name hidden-sm">{{ Auth::user()->firstname}}</span>
                                 <img src="{{ asset('assets/images/users/user-5.jpg')}}" alt="profile-user" class="rounded-circle thumb-xs" />                                 
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="pages-profile.html"><i data-feather="user" class="align-self-center icon-xs icon-dual me-1"></i> Profile</a>
                                 <a class="dropdown-item" href="apps-contact-list.html"><i data-feather="users" class="align-self-center icon-xs icon-dual me-1"></i> Contacts</a>
                                 <div class="dropdown-divider mb-0"></div>
-                                <a class="dropdown-item" href="auth-login.html"><i data-feather="power" class="align-self-center icon-xs icon-dual me-1"></i> Logout</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i data-feather="power" class="align-self-center icon-xs icon-dual me-1"></i>Se déconnecter</a>
+                                  <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                        @csrf
+                                </form>
                             </div>
                         </li>
                     </ul><!--end topbar-nav-->
@@ -127,14 +130,7 @@
                         </li> 
                         <li class="creat-btn">
                             <div class="nav-link">
-                                <a class=" btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus me-2"></i>New Task</a>
-                                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                        @csrf
-                                    </form>
+                                <a class=" btn btn-sm btn-soft-primary" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" role="button"><i class="fas fa-plus me-2"></i>New Task</a>
                             </div>                                
                         </li>                           
                     </ul>

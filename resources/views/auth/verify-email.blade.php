@@ -40,52 +40,24 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                      @if (session('status'))
+                                    @if (session('status'))
                                     
                                         <div class="alert alert-success" role="alert">
                                             {{ session('status') }}
-                                        </div>
-                                          
+                                        </div>     
                                     @endif
-                                    <form class="form-horizontal" action="{{route('password.update')}}" method="POST"> 
-
-                                        @csrf     
-                                        <input type="hidden" name="token" value="{{ $request->route('token')}}">          
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="username">Email</label>
+                                    <p>Vous devez vérifier votre adresse email</p>
+                                    <form class="form-horizontal" action="{{route('verification.send')}}" method="POST"> 
+                                        @csrf               
+                                  
+                                          <div class="form-group mb-2">
+                                       
                                             <div class="input-group">                                                                                         
-                                                <input type="email" readonly class="form-control" name="email"  id="email" value="{{ $request->email }}">
+                                                <input type="submit" class="form-control" name="login" id="login" value="Resend">
                                             </div>    
-                                            @error('email')
-                                             <span class="text-danger">{{$message}}</span>
-                                             @enderror                                
+                                                                         
                                         </div>
-                                        
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="username">Mot de passe</label>
-                                            <div class="input-group">                                                                                         
-                                                <input type="password" class="form-control" name="password" id="email">
-                                            </div>    
-                                            @error('password')
-                                             <span class="text-danger">{{$message}}</span>
-                                             @enderror                                
-                                        </div>
-                                        
-                                        <div class="form-group mb-2">
-                                            <label class="form-label" for="username">Confirmer mot de passe</label>
-                                            <div class="input-group">                                                                                         
-                                                <input type="password" class="form-control" name="password_confirmation"  id="email">
-                                            </div>    
-                                            @error('email')
-                                             <span class="text-danger">{{$message}}</span>
-                                             @enderror                                
-                                        </div><!--end form-group--> 
-            
-                                        <div class="form-group mb-0 row">
-                                            <div class="col-12 mt-2">
-                                                <button class="btn btn-primary w-100 waves-effect waves-light" name="reset" id="reset" type="submit">Reset <i class="fas fa-sign-in-alt ms-1"></i></button>
-                                            </div><!--end col--> 
-                                        </div> <!--end form-group-->                           
+                                      <!--end form-group-->                           
                                     </form><!--end form-->
                                     <p class="text-muted mb-0 mt-3">Remember It ?  <a href="{{ route('login') }}" class="text-primary ms-2">Sign in here</a></p>
                                 </div>
