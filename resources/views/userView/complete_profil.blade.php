@@ -26,13 +26,13 @@
 
 <body>
     <!-- Left Sidenav -->
-    @include('includes.menuAdmin')
+    @include('includes.menuUser')
     <!-- end left-sidenav-->
 
 
     <div class="page-wrapper">
         <!-- Top Bar Start -->
-        @include('includes.headAdmin')
+        @include('includes.head')
         <!-- Top Bar End -->
 
         <!-- Page Content-->

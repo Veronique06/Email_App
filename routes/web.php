@@ -15,10 +15,9 @@ use App\Http\Controllers\user\ProfilController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
-
-Route::middleware(['auth', 'complete_profil'])->group(function () {
+Route::middleware(['auth','verified' ,'complete_profil'])->group(function () {
     Route::get('/home', function () {
         return view('userView.home');
     })->name('home');
@@ -26,7 +25,7 @@ Route::middleware(['auth', 'complete_profil'])->group(function () {
 
 Route::get('complete', function () {
     return view('userView.complete_profil');
-})->name('complete_profil')->middleware('auth');
+})->name('complete_profil')->middleware(['auth','verified']);
 
 Route::get('complete-profil-valid',[ProfilController::class , "completer_information"])
 ->name('complete_profil_valid')->middleware('auth');
