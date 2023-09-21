@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('home');
-})->middleware('auth');
+    return view('userView.home');
+})->middleware('profil');
+
+Route::get('complete', function () {
+    return view('userView.complete_profil');
+})->name('complete_profil');
 
 require __DIR__ . '/admin_route.php';

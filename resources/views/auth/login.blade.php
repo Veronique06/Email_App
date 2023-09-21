@@ -5,7 +5,7 @@
 <!-- Mirrored from mannatthemes.com/dastone/default/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Sep 2023 09:57:49 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Dastone - Admin & Dashboard Template</title>
+        <title>Email_App - User</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="" name="author" />
@@ -36,7 +36,7 @@
                                             <img src="{{ asset('assets/images/logo-sm-dark.png')}}" height="50" alt="logo" class="auth-logo">
                                         </a>
                                         <h4 class="mt-3 mb-1 fw-semibold text-white font-18">Let's Get Started Dastone</h4>   
-                                        <p class="text-muted  mb-0">Sign in to continue to Dastone.</p>  
+                                        <p class="text-muted  mb-0">Connectez-vous pour continuer sur Email_App.</p>  
                                     </div>
                                 </div>
                                 <div class="card-body p-0">
@@ -71,7 +71,7 @@
                                                         </div>
                                                     </div><!--end col--> 
                                                     <div class="col-sm-6 text-end">
-                                                        <a href="auth-recover-pw.html" class="text-muted font-13"><i class="dripicons-lock"></i> Forgot password?</a>                                    
+                                                        <a href="auth-recover-pw.html" class="text-muted font-13"><i class="dripicons-lock"></i> Mot de passe oublié?</a>                                    
                                                     </div><!--end col--> 
                                                 </div><!--end form-group--> 
                     
@@ -82,10 +82,10 @@
                                                 </div> <!--end form-group-->                           
                                             </form><!--end form-->
                                             <div class="m-3 text-center text-muted">
-                                                <p class="mb-0">Don't have an account ?  <a href="{{ route('register')}}" class="text-primary ms-2">Free Register</a></p>
+                                                <p class="mb-0">Pas de compte ?  <a href="{{ route('register')}}" class="text-primary ms-2">S'enregistrer</a></p>
                                             </div>
                                             <div class="account-social">
-                                                <h6 class="mb-3">Or Login With</h6>
+                                                <h6 class="mb-3">Ou se connecter avec</h6>
                                             </div>
                                             <div class="btn-group w-100">
                                                 <button type="button" class="btn btn-sm btn-outline-secondary">Facebook</button>

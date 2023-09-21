@@ -23,6 +23,7 @@ return new class extends Migration
             $table->date('birthday')->nullable();
             $table->string('name_society')->nullable();
             $table->boolean('actif')->default(1);
+            $table->boolean('profil')->default(0);
             $table->string('type_account')->default('user');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
