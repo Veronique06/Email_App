@@ -26,6 +26,7 @@ class PackageSeeder extends Seeder
             'price' => 2500,
             'nombre_jours' => 20,
             'nombre_contact'=> 7,
+            'popular'=> true,
         ]);
 
         DB::table('packs')->insert([

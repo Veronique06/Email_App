@@ -100,6 +100,7 @@
         <script src="{{ asset('plugins/jvectormap/jquery-jvectormap-us-aea-en.js')}}"></script>
         <script src="{{ asset('assets/pages/jquery.analytics_dashboard.init.js')}}"></script>
 
+        @yield('code_js')
         <!-- App js -->
         <script src="{{ asset('assets/js/app.js')}}"></script>
 

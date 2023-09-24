@@ -1,9 +1,11 @@
 @extends('layouts.template')
 
-@section('title', "") 
+@section('title', "")
 
-@section('title2')
-@endsection
+
 
 @section('contenu')
+@endsection
+
+@section('code_js')
 @endsection
