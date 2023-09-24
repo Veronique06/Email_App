@@ -43,7 +43,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">{{config('app.name')}}</a></h1>
+      <h1 class="logo"><a href="{{ route('welcome')}}">{{config('app.name')}}</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
 
       <nav id="navbar" class="navbar">
@@ -510,8 +510,9 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="" method="post" role="form" class="php-email-form">
+           @include('layouts.message')
+            <form action="{{ route('contact')}}" method="POST">
+              @csrf
               <div class="row gy-2 gx-md-3">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -525,12 +526,8 @@
                 <div class="form-group col-12">
                   <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                 </div>
-                <div class="my-3 col-12">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center col-12"><button type="submit">Send Message</button></div>
+                
+                <div class="text-center col-12"><button type="submit" class="btn btn-primary">Send Message</button></div>
               </div>
             </form>
 

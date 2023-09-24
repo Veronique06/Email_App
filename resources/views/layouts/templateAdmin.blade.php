@@ -12,6 +12,10 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico')}}">
 
+         <!-- DataTables -->
+        <link href="{{ asset('plugins/datatables/dataTables.bootstrap5.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('plugins/datatables/buttons.bootstrap5.min.css') }}" rel="stylesheet" type="text/css" />
+
         <!-- jvectormap -->
         <link href="{{ asset('plugins/jvectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet">
 
@@ -41,28 +45,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title-box">
-                                <div class="row">
-                                    <div class="col">
-                                        <h4 class="page-title">@yield('title')</h4>
-                                        <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="javascript:void(0);">{{config('app.name')}}</a></li>
-                                            <li class="breadcrumb-item active">@yield('title')</li>
-                                        </ol>
-                                    </div>
-                                    <!--end col-->
-                                    <div class="col-auto align-self-center">
-                                        <a href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
-                                            <span class="ay-name" id="Day_Name">Aujourd'hui:</span>&nbsp;
-                                            <span class="" id="Select_date">Jan 11</span>
-                                            <i data-feather="calendar" class="align-self-center icon-xs ms-1"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-sm btn-outline-primary">
-                                            <i data-feather="download" class="align-self-center icon-xs"></i>
-                                        </a>
-                                    </div>
-                                    <!--end col-->
-                                </div>
-                                <!--end row-->
+                            @yield('title2')
                             </div>
                             <!--end page-title-box-->
                         </div>
@@ -103,6 +86,15 @@
         <script src="{{ asset('plugins/jvectormap/jquery-jvectormap-us-aea-en.js')}}"></script>
         <script src="{{ asset('assets/pages/jquery.analytics_dashboard.init.js')}}"></script>
 
+          <!-- Required datatable js -->
+        <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('plugins/datatables/dataTables.bootstrap5.min.js') }}"></script>
+
+        <!-- App js -->
+    
+        <script>
+            $('#datatable').DataTable();           
+        </script>
         <!-- App js -->
         <script src="{{ asset('assets/js/app.js')}}"></script>
 
