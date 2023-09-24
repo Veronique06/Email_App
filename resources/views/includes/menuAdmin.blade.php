@@ -20,10 +20,9 @@
                             class="align-self-center menu-icon"></i><span>Dashboard</span><span class="menu-arrow"><i
                                 class="mdi mdi-chevron-right"></i></span></a>
                     <ul class="nav-second-level" aria-expanded="false">
-                        <li class="nav-item"><a class="nav-link" href="index.html"><i
+                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.home')}}"><i
                                     class="ti-control-record"></i>Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sales-index.html"><i
-                                    class="ti-control-record"></i>Sales</a></li>
+
                     </ul>
                 </li>
 
@@ -33,7 +32,7 @@
                                 class="mdi mdi-chevron-right"></i></span>
                         </a>
                     <ul class="nav-second-level" aria-expanded="false">
-                        <li class="nav-item"><a class="nav-link" href="index.html"><i
+                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.liste')}}"><i
                                     class="ti-control-record"></i>Les packs</a></li>
                         <li class="nav-item"><a class="nav-link" href="sales-index.html"><i
                                     class="ti-control-record"></i>Les souscriptions</a></li>

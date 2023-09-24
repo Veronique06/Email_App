@@ -1,6 +1,9 @@
 @extends('layouts.template')
 
-@section('title', "") <!-- Titre de la page -->
+@section('title', "") 
+
+@section('title2')
+@endsection
 
 @section('contenu')
 @endsection

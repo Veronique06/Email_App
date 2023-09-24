@@ -23,6 +23,7 @@ class UserSeeder extends Seeder
                 'lastname' => "User_".$i."_prenoms",
                 'email' => 'user'.$i.'@gmail.com',
                 'password' => Hash::make('12345678'),
+                'email_verified_at'=> date('Y-m-d'),
             ]);
 
         }

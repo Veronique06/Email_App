@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\user\ProfilController;
 /*
@@ -29,5 +30,8 @@ Route::get('complete', function () {
 
 Route::get('complete-profil-valid',[ProfilController::class , "completer_information"])
 ->name('complete_profil_valid')->middleware('auth');
+
+Route::post('/contact',[ContactController::class , "save_contact"])
+->name('contact');
 
 require __DIR__ . '/admin_route.php';
