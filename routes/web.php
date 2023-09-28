@@ -1,10 +1,14 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Models\Mes_contact;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\user\ProfilController;
 use App\Http\Controllers\user\AbonnementController;
 use App\Http\Controllers\user\CompteController;
+use App\Http\Controllers\user\MesContactController;
+use App\Models\ContactUser;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +38,13 @@ Route::middleware(['auth','verified' ,'complete_profil'])->prefix('users')->name
     Route::name('profil.')->group(function () {
         Route::get('mon-profil', [CompteController::class , 'mon_profil'])->name('mon_profil');
         Route::get('setting', [CompteController::class , 'setting_profil'])->name('setting');
+        
+    });
+
+     Route::name('contactUser.')->group(function () {
+        Route::get('listes', [MesContactController::class , 'liste_contact'])->name('listes');
+       
+        
     });
 
 });
