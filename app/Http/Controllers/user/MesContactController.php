@@ -13,7 +13,7 @@ class MesContactController extends Controller
     function liste_contact()
     {
         $contacts = Mes_contact::all();
-        return view('userView.mescontacts.listeContact');
+        return view('userView.mescontacts.listeContact',['contacts'=>$contacts]);
     }
 
 }

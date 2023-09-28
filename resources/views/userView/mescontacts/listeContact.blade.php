@@ -14,7 +14,7 @@
                                             <div class="media">
                                                 <img src="{{ asset('assets/images/users/user-1.jpg')}}" alt="user" class="rounded-circle thumb-lg align-self-center">
                                                 <div class="media-body ms-3 align-self-center">
-                                                    <h5 class="mt-0 mb-1">Wendy Keen</h5> 
+                                                    <h5 class="mt-0 mb-1">ODOUNHEWOU Véronique</h5> 
                                                     <p class="mb-0 text-muted">Freelance Developer</p>
                                                 </div>
                                             </div><!--end media--> 
