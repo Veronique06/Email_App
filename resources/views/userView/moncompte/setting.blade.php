@@ -32,33 +32,33 @@
                     <div class="col-lg-6 col-xl-6">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Change Password</h4>
+                                <h4 class="card-title">Changer mot de passe</h4>
                             </div><!--end card-header-->
                             <div class="card-body">
                                 <div class="form-group row">
-                                    <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Current Password</label>
+                                    <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Mot de passe actuel</label>
                                     <div class="col-lg-9 col-xl-8">
                                         <input class="form-control" type="password" placeholder="Password">
-                                        <a href="#" class="text-primary font-12">Forgot password ?</a>
+                                        <a href="#" class="text-primary font-12">Mot de passe oublié ?</a>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">New Password</label>
+                                    <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Nouveau mot de passe</label>
                                     <div class="col-lg-9 col-xl-8">
-                                        <input class="form-control" type="password" placeholder="New Password">
+                                        <input class="form-control" type="password" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Confirm Password</label>
+                                    <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Confirmer mot de passe</label>
                                     <div class="col-lg-9 col-xl-8">
-                                        <input class="form-control" type="password" placeholder="Re-Password">
-                                        <span class="form-text text-muted font-12">Never share your password.</span>
+                                        <input class="form-control" type="password" placeholder="">
+                                        <span class="form-text text-muted font-12">Ne communiquez jamais votre mot de passe.</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-lg-9 col-xl-8 offset-lg-3">
-                                        <button type="submit" class="btn btn-sm btn-outline-primary">Change Password</button>
-                                        <button type="button" class="btn btn-sm btn-outline-danger">Cancel</button>
+                                        <button type="submit" class="btn btn-sm btn-outline-primary">Changer mot de passe</button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger">Annuler</button>
                                     </div>
                                 </div>
                             </div><!--end card-body-->
@@ -67,7 +67,7 @@
                     <div class="col-lg-6 col-xl-6">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Other Settings</h4>
+                                <h4 class="card-title">Autres paramètres</h4>
                             </div><!--end card-header-->
                             <div class="card-body">
 

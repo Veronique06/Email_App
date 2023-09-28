@@ -21,8 +21,8 @@
                     <li>
                         <a href="javascript: void(0);"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Contacts</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="nav-second-level" aria-expanded="false">
-                            <li class="nav-item"><a class="nav-link" href="index.html"><i class="ti-control-record"></i>Liste complète</a></li>
-                            <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>Ajouter manuellement</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('user.contactUser.listes')}}"><i class="ti-control-record"></i>Liste complète</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>Ajouter contact</a></li>
                             <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>Importer</a></li>
                             <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>Groupes de contact</a></li>
                         </ul>

@@ -34,33 +34,33 @@
                                 <div class="card-header">
                                     <div class="row align-items-center">
                                         <div class="col">
-                                            <h4 class="card-title">Personal Information</h4>
+                                            <h4 class="card-title">Information personnelle</h4>
                                         </div><!--end col-->
                                     </div>  <!--end row-->
                                 </div><!--end card-header-->
                                 <div class="card-body">
                                     <div class="form-group row">
-                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">First Name</label>
+                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Prénom</label>
                                         <div class="col-lg-9 col-xl-8">
                                             <input class="form-control" type="text" value="Rosa">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Last Name</label>
+                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Nom</label>
                                         <div class="col-lg-9 col-xl-8">
                                             <input class="form-control" type="text" value="Dodson">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Company Name</label>
+                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Nom société</label>
                                         <div class="col-lg-9 col-xl-8">
                                             <input class="form-control" type="text" value="MannatThemes">
-                                            <span class="form-text text-muted font-12">We'll never share your email with anyone else.</span>
+                                            <span class="form-text text-muted font-12">Nous ne communiquerons jamais votre adresse électronique à qui que ce soit.</span>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Contact Phone</label>
+                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Téléphone</label>
                                         <div class="col-lg-9 col-xl-8">
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="las la-phone"></i></span>
@@ -69,7 +69,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Email Address</label>
+                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center">Email</label>
                                         <div class="col-lg-9 col-xl-8">
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="las la-at"></i></span>
@@ -100,8 +100,8 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-9 col-xl-8 offset-lg-3">
-                                            <button type="submit" class="btn btn-sm btn-outline-primary">Submit</button>
-                                            <button type="button" class="btn btn-sm btn-outline-danger">Cancel</button>
+                                            <button type="submit" class="btn btn-sm btn-outline-primary">Valider</button>
+                                            <button type="button" class="btn btn-sm btn-outline-danger">Annuler</button>
                                         </div>
                                     </div>
                                 </div>
